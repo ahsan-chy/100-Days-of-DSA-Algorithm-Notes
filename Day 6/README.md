@@ -7,7 +7,6 @@ Table of Content
 - InPlace
 - Bitwise Operator
 - Swap with **XOR** without Third Variable
-- IF - Else (Optimize way to write)
 
 
 .
@@ -104,14 +103,3 @@ arr[j+1] = arr[j] ^ arr[j+1];
 arr[j] = arr[j] ^ arr[j + 1];
 ```
 ![xor](https://electronicspost.com/wp-content/uploads/2015/11/truth-table-of-ex-or-gate.png)
-
-
-
-
-
-
-
-## If - Else (Optimize Way to write)
-
-
-
