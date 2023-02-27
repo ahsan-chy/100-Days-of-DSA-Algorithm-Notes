@@ -11,6 +11,5 @@
 | 4   | **[Day4](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/Day-3/Day%204)** | [Replit](https://replit.com/@ahaniqbal?path=folder/100%20Days%20DSA%20with%20C%2B%2B/Day%204) | Basics of Math Operations - Quotient - Remainder - Modulus |
 | 5   | **[Day5](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/Day-3/Day%205)** | [Replit](https://replit.com/@ahaniqbal?path=folder/100%20Days%20DSA%20with%20C%2B%2B/Day%205) | ARRAY - Kadane's Algorithm in Array - Selection Sort |
 | 6   | **[Day6](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/Day-8/Day%206)** | [Replit](https://replit.com/@ahaniqbal?path=folder/100%20Days%20DSA%20with%20C%2B%2B/Day%206) | Bubble Sort - Swap with Bitwise Operator(XOR) - Auxilary Space - Inspace|
-| 7   | **[Day7](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/Day-8/Day%207)** | [Replit](https://replit.com/@ahaniqbal?path=folder/100%20Days%20DSA%20with%20C%2B%2B/Day%207) | Bitwise Operator - One's Complement - Two's Complement - Bitwise Questions |
-
+| 7   | **[Day7](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/Day-8/Day%207)** | [Replit](https://replit.com/@ahaniqbal?path=folder/100%20Days%20DSA%20with%20C%2B%2B/Day%207) | Bitwise Operator - One's Complement - Two's Complement - Bitwise Questions|
 | 8   | **[Day8](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/Day-8/Day%208)** | [Replit](https://replit.com/@ahaniqbal?path=folder/100%20Days%20DSA%20with%20C%2B%2B/Day%208) | Binary & Decimal Number System |
