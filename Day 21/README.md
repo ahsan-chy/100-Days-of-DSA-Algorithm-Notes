@@ -1,6 +1,8 @@
 
 # Link List
 
+![Link List](https://media.geeksforgeeks.org/wp-content/uploads/20220816144425/LLdrawio.png)
+
 Link List Syntex:
 
 ![Link List](https://user-images.githubusercontent.com/85479513/228701009-957ac27c-c4c6-4415-a890-dcf401bf07de.png)
@@ -30,11 +32,14 @@ class Node {
   cout << second -> data << endl;
 ```
 
+#### Display LinkList Data Using loop
 
-
-
-
-
+```c++
+  while (head != NULL) {
+    cout << head->data <<endl;
+    head = head->next;
+  }
+```
 
 
 
@@ -95,7 +100,7 @@ public:
 };
 ```
 
-Create Pointer Object and Store Value in Node
+Create Nodes and Store Value in Node
 ```javascript
   // Create three nodes
     Node* head = new Node(5);
@@ -117,10 +122,23 @@ Display the pointers
     cout << "Third points to address: " << third << endl;
 ```
 
+#### [Programize Link List](https://www.programiz.com/dsa/linked-list)
+
 
 ## Singly Link List
+
+![Singly Link List](https://simplesnippets.tech/wp-content/uploads/2019/06/singly-linked-list-data-structure.jpg)
 
 #### Insert in Link List
 - Insert at Start
 - Insert at End  
 - Insert at Middle
+
+
+```c++
+
+```
+
+```c++
+
+```
