@@ -10,6 +10,11 @@ Table Of Content
 - Abastract Class
 - Pure Virtual Function
 - Abstract Class - Interface
+- Constructor
+    - Default Constructor
+    - parameterized Constructor
+    - Copy Constructor
+- Abastract Class vs Interface
 - Friend Function
 - Friend Class
 
@@ -305,6 +310,108 @@ Area of square: 16
 Enter radius of the circle: 5
 Area of circle: 78.5
 ```
+
+## Constructor
+A constructor is a special type of member function that is invoked automatically when an object is created.
+
+- In C++, a constructor has the same name as that of the class and **it does not have a return type.** For example,
+
+```C++
+class  Wall {
+  public:
+    
+    Wall() {  // declare constructor
+      // code
+    }
+};
+```
+- It is use to initialize the object of its class.
+
+More charactristics of Constructor:
+- It should be declared in **Public Section of class.**
+- It can have Default Arguments
+- We can't refer to their address
+
+
+
+
+
+### Default Constructor
+A constructor with no parameters is known as a default constructor. In the example above, Wall() is a default constructor.
+
+
+```c++
+// declare a class
+class  Wall {
+  private:
+    double length;
+
+  public:
+    // default constructor to initialize variable
+    Wall() {
+      length = 5.5;
+      cout << "Creating a wall." << endl;
+      cout << "Length = " << length << endl;
+    }
+};
+
+int main() {
+  Wall wall1;
+  return 0;
+}
+```
+Output
+```c++
+Creating a Wall
+Length = 5.5
+```
+
+### Parameterized Constructor
+Constructor with parameters is known as a parameterized constructor. This is the preferred method to initialize member data.
+
+```C++
+// C++ program to calculate the area of a wall
+
+#include <iostream>
+using namespace std;
+
+// declare a class
+class Wall {
+  private:
+    double length;
+    double height;
+
+  public:
+    // parameterized constructor to initialize variables
+    Wall(double len, double hgt) {
+      length = len;
+      height = hgt;
+    }
+
+    double calculateArea() {
+      return length * height;
+    }
+};
+
+int main() {
+  // create object and initialize data members
+  Wall wall1(10.5, 8.6);
+  Wall wall2(8.5, 6.3);
+
+  cout << "Area of Wall 1: " << wall1.calculateArea() << endl;
+  cout << "Area of Wall 2: " << wall2.calculateArea();
+
+  return 0;
+}
+```
+Output:
+```c++
+Area of Wall 1: 90.3
+Area of Wall 2: 53.55
+```
+
+### Copy Constructor
+
 
 ## Abastract Class vs Interface
 
