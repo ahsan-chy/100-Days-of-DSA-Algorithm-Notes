@@ -1,5 +1,5 @@
 
-# Day 2: Char Arrays - Vector Array - String - Number
+# Day 2: Char Arrays - Vector Array - String
 
 Topics Day 2:
 - **Char Array**
@@ -14,17 +14,14 @@ Topics Day 2:
         - Check If String is palindrome
         - Valid Palindrome
         - Reverse Words in a String
-
-- **Number** 
-    - Number Questions
-        - Reverse the given Number
-        - Check Number is plendrom
-        - Check Strong Number 
-
-- Reverse the given String
-- Check String is plendrom
-
-
+        - Remove wovels from string
+        - Anagram 
+        - Find all anagrams 
+        - Sliding Window Approach
+        - Palindrom
+            - Longest Plendromic Substring
+            - Repeated Substring Pattren
+            - Longest consective subsequence
 
 
 ## Char Array
@@ -167,7 +164,6 @@ int main() {
 
     return 0;
 }
-
 ```
 
 ### String Questions 
@@ -177,15 +173,7 @@ int main() {
 - [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
 - [151.  Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/)
 - [557. Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/)
+- [Remove wovels from string]()
+- [Anagram]()
 - []()
 
-
-
-
-
-## Number
-
-
-### Number Questions
-- []()
-- []()

@@ -1,8 +1,30 @@
 
-## Binary & Decimal Number System
+# Day 8: Number & Math Operations
 
-- Decimal to Binary 
-- Decimal to Binary
+Topics Day 8:
+- **Number** 
+    - Number Questions
+        - Count Digits
+        - Reverse given Number
+        - Number is palindrom or Not
+        - Number is Armstrong
+        - Print All Divisor of Given Number 
+		- Decimal to Binary 
+		- Binary to Decimal
+        - Find GCO Of Two Numbers 
+
+
+### Number Questions
+
+- [Count Digits]()
+- [Reverse given Number]()
+- [Number is palindrom or Not]()
+- [Number is Armstrong]()
+- [Print All Divisor of Given Number]() 
+- [Decimal to Binary]() 
+- [Binary to Decimal]() 
+- [Find GCO Of Two Numbers]() 
+
 
 ![Binary table](https://miro.medium.com/max/1152/1*DTmuXRaK9GIqeEF9IB2B_g.png)
 
@@ -30,6 +52,7 @@ Second Method to **Convert Decimal to Binary**
 		char rem = number % 2 ? '0' : '1'; //Check Remainder= 0 - 1
 		ans = rem + ans; 
 		number = number / 2; // 0 5 2 1 0
+	}
 ```
 
 
