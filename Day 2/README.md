@@ -102,15 +102,21 @@ int size = myVector.size(); // size is 13
 ```
 
 
-- Initializing a string:
+- **Initializing** a string:
 ```c++
 string myString = "Hello, World!";
 ```
 
-- Finding the length of a string:
+- Finding the **length** of a string:
 ```c++
 int length = myString.length(); // length is 29
 ```
+
+- Take **Input** string from user:
+```c++
+getline(cin, student);
+```
+
 [String Functions List](https://cplusplus.com/reference/string/string/)
 
 Most used String Functions:
@@ -171,9 +177,20 @@ int main() {
 - [344 Reverse String Leet code](https://leetcode.com/problems/reverse-string/description/)
 - [Reverse String without moving Special Char](https://replit.com/@ahaniqbal/Reverse-String-without-moving-special)
 - [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
+    - [Longest Plendromic Substring]()
+    - [Repeated Substring Pattren]()
+    - [Longest consective subsequence]()
+
 - [151.  Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/)
 - [557. Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/)
 - [Remove wovels from string]()
-- [Anagram]()
+- [Anagram](https://replit.com/@ahaniqbal/Anagram#main.cpp)
+- [Valid Anagram](https://leetcode.com/problems/valid-anagram/description/)
+    - [Find all anagrams]() 
+- [Sliding Window Approach]()
 - []()
+    
+
+
+
 
