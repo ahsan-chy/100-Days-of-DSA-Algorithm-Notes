@@ -8,7 +8,7 @@ Table Of Content
 - Virtual Function 
 - Pure Virtual Function
 - Abastract Class
-- Abstract Class - Interface
+- Abstract Class - Interface Diff
 - Compiletime Polymorphism vs Runtime Polymorphism
 - Struct vs Class
 - This
@@ -16,6 +16,7 @@ Table Of Content
     - Default Constructor
     - parameterized Constructor
     - Copy Constructor
+- Encapsulation vs Abstraction Diff
 - Friend Function
 - Friend Class
 
@@ -402,12 +403,41 @@ int main()
   return 0;
 }
 ```
+**Can we create instance of abstract class**
+
+No, instance of abstract class can't be created because it does not have complete implementation. However, instance of subclass inheriting the abstract class can be created. 
 
 [Detail **Abstraction** Notion Link](https://www.notion.so/konnectwithahsan/Code-with-Example-35a95615af184a80a405b6eab573e18c)
 
 
 ## **Abstract Class** vs **Interface**
 
+```c++
+***************************Abstract class*****************************
+1) Abstract class can have abstract and non-abstract methods.
+2) Abstract class doesn't support multiple inheritance.
+3) The abstract keyword is used to declare abstract class.
+4) An abstract class can extend another Java class and implement multiple Java interfaces.
+5) An abstract class can be extended using keyword "extends".
+6) A Java abstract class can have class members like private, protected, etc.
+7)Example:
+public abstract class Shape{
+public abstract void draw();
+}
+
+
+*****************************Interface********************************
+1) Interface can have only abstract methods. Since Java 8, it can have default and static methods also.
+2) Interface supports multiple inheritance.
+3) The interface keyword is used to declare interface.
+4) An interface can extend another Java interface only.
+5) An interface can be implemented using keyword "implements".
+6) Members of a Java interface are public by default.
+7) Example:
+public interface Drawable{
+void draw();
+}
+```
 
 
 ### How We can achive **Compiletime Polymorphism** 
@@ -586,7 +616,45 @@ Area of Wall 2: 53.55
 
 
 
+## Encapsulation vs Abstraction Diff
 
-##  Friend Function
+```c++
+=================================================================================================================
+		Encapsulation						===========				Abstraction									
+=================================================================================================================
+1] Encapsulation is implementation level.	===========	 1] Abstraction problems are solved at the	design		= 
+											===========		(representation) or interface level.				=
+------------------------------------------- =========== ------------------------------------------------------- =
+2] In Encapsulation buinding data Members	===========															=
+	and methods in single unit called class ===========	 2] Abstraction technique hiding the implementation		=
+	protect the method from outside.		=========== 	(unwanted information) from end use and displaying 	=
+ 											===========		only required information.							=
+------------------------------------------- ===========	------------------------------------------------------	=
+3]	Hides the data from user so user can't 	===========	 3] Abstraction gives access to specific part.			=
+	use/access them directly.				===========															=
+------------------------------------------- ===========	------------------------------------------------------	=
+4]	Encapsulation can be implemented using	===========	 4] implement abstraction using abstract class and 		=
+	by access modifier i.e. public, private	===========		interfaces											=
+	protected.								===========															=
+------------------------------------------- ===========	------------------------------------------------------	=
+5] hidden using methods of getters			===========	 5]  hidden using abstract classes and interfaces.		=
+	 and setters.							===========															=
+------------------------------------------- ===========	------------------------------------------------------	=
+6]	Object not required	to perform the		===========	 5] Perform abstraction are encapsulated object required=
+	abstraction								===========															=
+=================================================================================================================
 
-##  Friend Class
+```
+
+Example: 
+- Encapsulation:
+  - In Company Sales and AC departements. If AC required specific month data then they can't directly access from Sales. 
+  
+- Abstraction: 
+  - Sort Method in Class 
+  - Car 
+  - A.C
+  - Mobile
+
+##  Friend Function - Friend Class
+[Notion Notes Link](https://www.notion.so/konnectwithahsan/OOP-Interview-Topics-and-Questions-90814b3a72ff48cbb03b92a732be7096)
