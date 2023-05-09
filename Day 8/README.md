@@ -7,8 +7,9 @@ Topics Day 8:
         - Count Digits
         - Reverse given Number
 		- Strong Numbers 
-        - Number is palindrom or Not
         - Number is Armstrong
+        - Number is palindrom or Not
+		- Sum of digits of a number until sum becomes single digit
         - Print All Divisor of Given Number 
 		- Decimal to Binary 
 		- Binary to Decimal
@@ -23,10 +24,11 @@ Topics Day 8:
 ### Number Questions
 
 - [Count Digits]()
-- [Reverse given Number]()
+- [Reverse given Number](https://replit.com/@ahaniqbal/Reverse-Number#main.cpp)
 - [Strong Numbers](https://replit.com/@ahaniqbal/strong-Number-c#main.cpp)
-- [Number is palindrom or Not]()
 - [Number is Armstrong]()
+- [Number is palindrom or Not](https://replit.com/@ahaniqbal/Palindrom-Number)
+- [Sum of digits of a number until sum becomes single digit](https://replit.com/@ahaniqbal/ESketchers-4179)
 - [Print All Divisor of Given Number]() 
 - [Decimal to Binary]() 
 - [Binary to Decimal]() 
@@ -38,7 +40,7 @@ Topics Day 8:
 - [Find GCO Of Two Numbers]() 
 
 
-### Reverse the Number 
+## Reverse the Number 
 
 ```c++
 int reverseData(int n) {
@@ -54,7 +56,7 @@ int reverseData(int n) {
 }
 ```
 
-### Strong Number 
+## Strong Number 
 
 **Strong number** is a special number whose sum of the factorial of digits is equal to the original number. 
 
@@ -94,6 +96,60 @@ int main(){
 }
 ```
 
+
+
+## Armstrong Number 
+
+![Armstrong Number](https://i1.faceprep.in/Companies-1/armstrong-number-in-python.png)
+
+
+
+## Number is Palindrom 
+
+```c++
+int reverseData(int n) {
+	cout<<n<<endl;
+
+  int reverseNumber = 0;		  //123 
+  while (n) {
+    int last = n % 10;				// 3 2 1
+    reverseNumber = reverseNumber * 10 + last;	// 321
+    n = n / 10;							// 12 1 0
+  }
+  return reverseNumber;
+}
+```
+
+## Finding sum of digits of a number until sum becomes single digit
+
+[Geeks For Geeks Example](https://www.geeksforgeeks.org/finding-sum-of-digits-of-a-number-until-sum-becomes-single-digit/)
+
+Example:  
+```c++
+7654  // 7 + 6 + 5 + 4
+22   // 2 + 2
+4	// Output
+```
+
+```c++
+int num;
+cout<<"Enter Number"<<endl;
+cin>>num;
+
+int temp = num;
+while(temp > 9){
+	int sum =0;
+	while(temp > 0){
+		
+		int last = temp %10;
+		sum += last;
+		temp = temp/10;
+	}
+	cout<<sum<<endl;
+	
+	temp = sum;
+}
+```
 
 .
 
