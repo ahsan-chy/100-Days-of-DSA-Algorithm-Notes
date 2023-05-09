@@ -1,124 +1,68 @@
+# Day 5:  Time & Space Complexity
 
-# Day 5: Array 
 
 Table of Content
-- Data Type in C++
-- Data Unit
-- ASCII Table
-- One's Complement - Two's Complement
-- Array 
-- Kadane's Algorithm in Array
-- Selection Sort in Array
+- Time Complexity 
+- Space Complexity 
+- Auxiliary Space
+- Big-O Notation (O-notation)
+- Theta Notation (Θ-notation)
+- Omega Notation (Ω-notation)
+- TLE - Time Limit Excide
+
+
 
 .
 
-## Data Type in C++
-![Data Type in C++](https://www.sitesbay.com/cpp/images/data-type-in-cpp.jpg)
 
-[Data Types in Detail](https://www.sitesbay.com/cpp/cpp-datatype)
+**Time complexity** is a function that describes how long an algorithm takes in terms of the quantity of input it receives. 
 
-```c++
-Size of char : 	1 byte
-Size of int : 	4 bytes
-Size of short int : 2 bytes
-Size of long int :  8 bytes
-Size of signed long int : 	8 bytes
-Size of unsigned long int : 8 bytes
-Size of float :   4 bytes
-Size of double :  8 bytes
-Size of wchar_t : 4 bytes
-```
-![Size of c++ Data Types](https://miro.medium.com/max/1400/1*YrL7gZ84SyjtUJJIXnsO4g.png)
-
-
-![Data Unit](https://image.semiconductor.samsung.com/image/samsung/p6/semiconductor/suppport/toolsandresources/dictionary/bits-and-bytes-units-of-data_2_en.jpeg?$ORIGIN_JPG$)
-
-ASCII Table
-
-![ASCII](https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/assets/1674552652160-ASCII%20Table%20Cpp1.png)
-
-#### One's Complement - Two's Complement
-
-![One's two](https://delightlylinux.files.wordpress.com/2014/10/l12-2.png)
-
-## Array
-An array is a **collection of items of same data type stored at contiguous memory locations.**
-
-```c++
-int score[5] = { 16, 2, 77, 40, 121 };  
-```
-
-```c++
-int arr[] = {1,2,3,4,5};
-	// let arr = 100 + (3*4) = 112 
-	cout << *(arr+3) << endl;
-	cout << arr[3] << endl;
-```
+**Space complexity** is a function that describes how much memory (space) an algorithm requires to the quantity of input to the method.
 
 .
 
-When an **initialization** of values is provided for an array, C++ allows the possibility of leaving the square brackets empty[]. In this case, the **compiler will assume automatically a size for the array that matches the number of values included between the braces {}**
+**Auxiliary Space** is the extra space or temporary space used by an algorithm.
 
-```c++
-int foo [] = { 16, 2, 77, 40, 12071 };
-```
+Note: It’s necessary to mention that space complexity depends on a variety of things such as
+
+- the programming language,
+- the compiler, or
+- even the machine running the algorithm.
+
 
 .
 
-Finally, the evolution of C++ has led to the adoption of **`universal initialization`** also for arrays. Therefore, **there is no longer need for the equal sign** between the declaration and the initializer. Both these statements are equivalent:
+![Time and Space Complexity](https://i.ytimg.com/vi/bxgTDN9c6rg/maxresdefault.jpg)
 
-```c++
-int foo[] = { 10, 20, 30 };
-int foo[] { 10, 20, 30 }; 
-```
+There are mainly three asymptotic notations:
 
-[Detail Array C++](https://www.cpp.edu/~elab/ECE114/Array.html)
-
+- Big-O Notation (O-notation)
+- Omega Notation (Ω-notation)
+- Theta Notation (Θ-notation)
 
 
-## Kadane's Algorithm in Array
-```c++
-// arr: input array
-    // n: size of array
-    //Function to find the sum of contiguous subarray with maximum sum.
-    long long maxSubarraySum(int arr[], int n){
-        // -2, -3, 4, -1, -2, 1, 5, -3
-      long long currMax = 0; 
-      long long totalMax = INT_MIN;
-      for(int i = 0; i < n; i++) {
-          currMax += arr[i]; // -2  -5 -1 -2 -4 -3 2 -1                  -2 -3 4 3 1 2 7 4
-          totalMax = max(totalMax, currMax); // -2 -2 -1 2            -2 -2 4 7 7
-          
-          if(currMax < 0) currMax = 0;
-          
-          
-      }
-      return totalMax;
-    }
-```
+## Big-O Notation (O-notation)
+
+Big-O notation represents the **upper bound** of the running time of an algorithm. Therefore, it gives the **worst-case** complexity of an algorithm.
 
 
-## Selection Sort
 
-[Visual Algo](https://visualgo.net/en/sorting)
+## Theta Notation (Θ-notation)
+Theta notation encloses the function from above and below. Since it represents the upper and the lower bound of the running time of an algorithm, it is used for analyzing the **average-case** complexity of an algorithm.  
 
-![Selection Sort](https://www.w3resource.com/w3r_images/selection-short.png)
+## Omega Notation (Ω-notation)
+Omega notation represents the **lower bound** of the running time of an algorithm. Thus, it provides the **best case** complexity of an algorithm.
 
-#### Selection Sort
 
-```c++
-int arr[] = {4, 3, 3, 2, 10, 12, 1, 5};
-for(int i = 0;i < n; i++) {
-	int minIndex = i;
-	for(int j = i + 1; j < n; j++) {
-		if(arr[j] < arr[minIndex]) {
-			minIndex = j;	
-		}
-	}
-	swap(arr[minIndex], arr[i]);
-}
 
-for(int i = 0; i < n; i++) {
-	cout << arr[i] << " ";
-	}
-```
+![asymtotic notation](https://adrianmejia.com/images/time-complexity-examples.png)
+
+
+
+## TLE - Time Limit Excide
+
+Most of the sites these days allow **10^8** operations per second, only a few sites still allow **10^7** operations. After figuring out the number of operations that can be performed, search for the right complexity by looking at the constraints given in the problem. 
+
+
+
+![TLE](https://media.geeksforgeeks.org/wp-content/uploads/20230308145710/Screenshot_20230308_025553.png)

@@ -1,7 +1,14 @@
-## Day 1
+## Day 1 
+
+Table of Content
+- Data Type in C++
+- Data Unit
+- ASCII Table
 - Increment - Decrement
 - If - If Else Statement (Return) 
 - Swap Two Numbers (without using third variable)
+- Break - Continue
+- 
 
 ### Topic 1: INC - DEC
 
