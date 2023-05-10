@@ -1,4 +1,4 @@
-# Day 12: 
+# Day 12: Array Approches
 
 Table of Content
 - Two Pointer Approch
