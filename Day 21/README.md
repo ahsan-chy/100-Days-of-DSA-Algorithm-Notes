@@ -1,7 +1,31 @@
 
 # Link List
 
+Table of content
+- What is linked List
+- Types of Linked List
+- Linked List + Constructor + Node + Class
+- Traverse Linked List
+    - Display LinkList Data Using loop
+- Linked List Insertion 
+    - Insert at Start
+    - Insert at End  
+    - Insert at Middle
+- Linked List Traversel 
+- 
+
+
+## Linked List
+Linked List is a linear data structure in which each element allocate dynamically & each element point to the next element.
+
 ![Link List](https://media.geeksforgeeks.org/wp-content/uploads/20220816144425/LLdrawio.png)
+
+### Types of Linked List
+- Singly Linked List
+- Doubly Linked List
+- Circular Linked List
+- Circular Doubly Linked List
+
 
 Link List Syntex:
 
