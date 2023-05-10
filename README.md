@@ -5,18 +5,18 @@
 
 | No  | Git Day  | Online Compiler |  Topics Detail |
 | :-- | :------- | :-------------- | :-------------- |
-| 1   | **[Day1](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%201)** | [Replit]() | ... |
-| 2   | **[Day2](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/blob/master/Day%202)** | [Replit]() | ... |
-| 3   | **[Day3](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%203)** | [Replit]() | ... |
-| 4   | **[Day4](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%204)** | [Replit]() | ... |
-| 5   | **[Day5](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%205)** | [Replit]() | ... |
-| 6   | **[Day6](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%206)** | [Replit]() | ... |
+| 1   | **[Day1](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%201)** | [Replit]() | C++ Data Type - INC/Dec - ASCII |
+| 2   | **[Day2](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/blob/master/Day%202)** | [Replit]() | **String** - Char Array - Vector |
+| 3   | **[Day3](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%203)** | [Replit]() | Math |
+| 4   | **[Day4](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%204)** | [Replit]() | Auxilary Space - In Place - **Bitwise Operator** - **1's / 2's Complement** - XOR - **Left / Right Shift** |
+| 5   | **[Day5](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%205)** | [Replit]() | Time & Space Complexity |
+| 6   | **[Day6](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%206)** | [Replit]() | Recursion |
 | 7   | **[Day7](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%207)** | [Replit]() | Number|
 | 8   | **[Day8](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%208)** | [Replit]() | ... |
 | 9   | **[Day9](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%209)** | [Replit]() | ... |
 | 10   | **[Day10](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%2010)** | [Replit]() | ... |
-| 11   | **[Day11](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%2011)** | [Replit](https://replit.com/@ahaniqbal?path=folder/100%20Days%20DSA%20with%20C%2B%2B/Day%2011%20-%20Array) | Array |
-| 12   | **[Day12](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%2012)** | [Replit]() | ... |
+| 11   | **[Day11](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%2011)** | [Replit](https://replit.com/@ahaniqbal?path=folder/100%20Days%20DSA%20with%20C%2B%2B/Day%2011%20-%20Array) | Array - Char Array - Operations |
+| 12   | **[Day12](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%2012)** | [Replit]() | Array Approches (**Two Pointer Approch - Palindrom - Anagram - Sliding Window**) |
 | 13   | **[Day13](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%2013)** | [Replit]() | ... |
 | 14   | **[Day14](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%2014)** | [Replit]() | Searching |
 | 15   | **[Day15](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%2015)** | [Replit]() | Sorting |
