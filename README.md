@@ -18,8 +18,8 @@
 | 11   | **[Day11](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%2011)** | [Replit](https://replit.com/@ahaniqbal?path=folder/100%20Days%20DSA%20with%20C%2B%2B/Day%2011%20-%20Array) | Array |
 | 12   | **[Day12](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%2012)** | [Replit]() | ... |
 | 13   | **[Day13](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%2013)** | [Replit]() | ... |
-| 14   | **[Day14](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%2014)** | [Replit]() | ... |
-| 15   | **[Day15](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%2015)** | [Replit]() | ... |
+| 14   | **[Day14](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%2014)** | [Replit]() | Searching |
+| 15   | **[Day15](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%2015)** | [Replit]() | Sorting |
 | 16   | **[Day16](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%2016)** | [Replit]() | ... |
 | 17   | **[Day17](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%2017)** | [Replit]() | ... |
 | 18   | **[Day18](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%2018)** | [Replit]() | ... |

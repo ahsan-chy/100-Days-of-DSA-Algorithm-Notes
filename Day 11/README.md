@@ -1,18 +1,26 @@
+# Day 11: Array 
 
-## Array 
-
-- What is Array
-- Sorting in Array
-- Searching in Array
+Table of Content
+- Array
+- Length/ Size in Array 
 - Traverse Array
+- Basic Array Operations
 - Find Element in Array
 	- Compare Values in Array
 	- Min - Max
 	- Find 2nd last element 
+ - Char Array Practice Questions
+        - Reverse Char Array (String)
+        - Check If String is palindrome
 - Filter Array 
 - Push/Insert Element in Array
 - PoP/Remove/Delete Element in Array
 
+
+.
+
+
+## Array
 An array is a **collection of items of same data type stored at contiguous memory locations.**
 
 ```c++
@@ -46,3 +54,97 @@ int foo[] { 10, 20, 30 };
 [Detail Array C++](https://www.cpp.edu/~elab/ECE114/Array.html)
 
 
+
+
+## Char Array
+
+Character array is a sequence of characters stored in contiguous memory locations. It is declared as an array of char type.
+
+For example, the following code declares a character array named myString and initializes it with the string "hello":
+
+```c++
+char myString[] = "hello";
+```
+
+Arrays of type char terminated with null character, that is, **`\0`** (ASCII value of null character is 0)
+
+**null** character **`\0`** is added to the end of the string automatically.
+
+Alternative ways of defining a string:
+```c++
+  char ch[20];
+  
+  char str[4] = "C++";
+
+  char str[4] = {'C','+','+','\0'};
+```
+
+
+In Char Array **"Cin >>"** stop Execution when you give him any of these: 
+- Space          "__"
+- Tab            " \t"
+- Enter          "\n"  
+
+
+**`cin.get()`** reads a single line of input from the stream, including whitespace, and stores it into a character array or a string object.
+```c++
+char myString[100];
+cin.get(myString, 100);
+```
+
+- 1. Find **Length** of Char Array
+```c++
+char myArray[] = "Hello, World!";
+int size = sizeof(myArray); // size is 14 (including the null terminator)
+```
+
+- 2. Find **Length** of Char Array
+```c++
+#include <cstring>
+
+char myArray[] = "Hello, World!";
+int length = strlen(myArray); // length is 13 (excluding the null terminator)
+```
+
+To find the size of a std::**vector<char>** object in C++, you can use the size member function. The **size** function returns the number of elements in the vector.
+
+```c++
+#include <vector>
+
+std::vector<char> myVector = {'H', 'e', 'l', 'l', 'o', ',', ' ', 'W', 'o', 'r', 'l', 'd', '!'};
+int size = myVector.size(); // size is 13
+```
+
+### Practice Questions:
+- [REPLIT Char Array Practice](https://replit.com/@ahaniqbal/Char-Array-Reverse-Character-ArrayString#main.cpp)
+- LeetCode [Reverse String](https://leetcode.com/problems/reverse-string/) 
+- Coding Ninja [Check If The String Is A Palindrome](https://www.codingninjas.com/codestudio/problems/check-if-the-string-is-a-palindrome_1062633#:~:text=Example%20%3A,string%20is%20also%20a%20palindrome.)
+
+
+
+![ASSCI Table](https://camo.githubusercontent.com/2d5391bdfdc17f64e1bea83a10af59f0d4852170ff08e336883396f891d40f1e/68747470733a2f2f7072657062797465732d6d6973632d696d616765732e73332e61702d736f7574682d312e616d617a6f6e6177732e636f6d2f6173736574732f313637343535323635323136302d41534349492532305461626c65253230437070312e706e67)
+
+
+
+## Find 2nd Largest Num
+
+```c++
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int arr[] = {6, 4, 1, 2, 8, 5};
+	int max1 = arr[0], max2 = INT_MIN;
+	for(int i = 1; i < 6; i++) {
+		if(arr[i] > max1 ) {
+			max2 = max1;
+			max1 = arr[i];
+		} else if(arr[i] > max2) {
+			max2 = arr[i];
+		}
+		
+	}
+	cout << max2 << endl;
+	return 0;
+}
+```
