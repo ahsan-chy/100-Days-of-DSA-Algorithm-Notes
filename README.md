@@ -35,7 +35,7 @@
 | 28   | **[Day28](http)** | [Replit]() | ... |
 | 29   | **[Day29](http)** | [Replit]() | ... |
 | 30   | **[Day30](http)** | [Replit]() | ... |
-| 31   | **[Day31](http)** | [Replit]() | ... |
+| 31   | **[Day31](http)** | [Replit]() | Stack |
 | 32   | **[Day32](http)** | [Replit]() | ... |
 | 33   | **[Day33](http)** | [Replit]() | ... |
 | 34   | **[Day34](http)** | [Replit]() | ... |
@@ -45,7 +45,7 @@
 | 38   | **[Day38](http)** | [Replit]() | ... |
 | 39   | **[Day39](http)** | [Replit]() | ... |
 | 40   | **[Day40](http)** | [Replit]() | ... |
-| 41   | **[Day41](http)** | [Replit]() | ... |
+| 41   | **[Day41](http)** | [Replit]() | Queue |
 | 42   | **[Day42](http)** | [Replit]() | ... |
 | 43   | **[Day43](http)** | [Replit]() | ... |
 | 44   | **[Day44](http)** | [Replit]() | ... |
