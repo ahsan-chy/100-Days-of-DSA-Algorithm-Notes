@@ -254,21 +254,20 @@ int num = -10;
 ```C++
 #include <math.h>
 
-	int num = 10101;
-	int i =0;
-	int res = 0;
-	while(num)
-		{
-			int digit = num % 10;
+int num = 10101;
+int i =0;
+int res = 0;
+while(num)
+	{
+		int digit = num % 10;
 
-			if(digit ==1)
-			{
-				res = res + pow(2, i);
-			}
-			
-			num = num / 10;
-			i++;
-		}
+		if(digit ==1)
+		{
+			res = res + pow(2, i);
+		}			
+		num = num / 10;
+		i++;
+	}
 
 	cout<<res;
 ```

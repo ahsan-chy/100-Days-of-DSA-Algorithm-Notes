@@ -2,20 +2,19 @@
 
 Table of Content
 - Array
-- Length/ Size in Array 
-- Traverse Array
+- Length/ Size in Array
+- Array Functions 
 - Basic Array Operations
 - Find Element in Array
-	- Compare Values in Array
 	- Min - Max
 	- Find 2nd last element 
+	- Compare Values in Array
  - Char Array Practice Questions
-        - Reverse Char Array (String)
-        - Check If String is palindrome
+	- Reverse Char Array (String)
+	- Check If String is palindrome
 - Filter Array 
 - Push/Insert Element in Array
 - PoP/Remove/Delete Element in Array
-
 
 .
 
@@ -53,7 +52,168 @@ int foo[] { 10, 20, 30 };
 
 [Detail Array C++](https://www.cpp.edu/~elab/ECE114/Array.html)
 
+- 
+```C++
+int arrr[15];
+cout<< arr[20]; // Exception - Error - You are accessing 20 index but array size is 15
+```
 
+- 
+```C++
+int arr[15] = {2,7};
+for(int i =0; i<15; i++){
+	cout<<arr[i];   // 270000000000000
+}
+```
+
+- Initialize all locations with **0**
+```C++
+int arr[15] = {0};
+for(int i =0; i<15; i++){
+	cout<<arr[i];   // 000000000000000
+}
+```
+
+
+### Array Length 
+
+- First Method to find **Length** of Array
+```c++
+int arr[] = {1,2,3,4,5};
+int length = sizeof(arr) / sizeof(arr[0]);  // length = 20/4 = 5 
+```
+
+- Second Method to find **Length** of Array
+```c++
+
+int getchlength(int num[]) {
+  int count = 0;
+  for (int i = 0; num[i] != '\0'; i++) {
+    count++;
+  }
+  return count;
+}
+```
+
+### Array Functions 
+- Min 
+- Max 
+- compare 
+- length - size
+- cin 
+- swap 
+
+
+
+##### Max
+Builtin Maximum Function
+
+```c++
+int maxx = INT_MIN;
+
+for(int i =0; i< len; i++){
+	miaxx = max(miaxx, num[i]);
+}
+return miaxx;
+```
+
+##### Min 
+
+Builtin Minimum Function
+
+```c++
+int minn = INT_MAX;
+
+for(int i =0; i< len; i++){
+	minn = min(minn, num[i]);
+}
+return minn;
+```
+
+##### Size - Length
+
+- First Method to find Length of Array
+```c++
+int arr[] = {1,2,3,4,5};
+int length = sizeof(arr) / sizeof(arr[0]);  // length = 20/4 = 5 
+```
+
+- Second Method to find Length of Array
+```c++
+
+int getchlength(int num[]) {
+  int count = 0;
+  for (int i = 0; num[i] != '\0'; i++) {
+    count++;
+  }
+  return count;
+}
+```
+
+
+### Find Min/Max In Array
+
+Minimum
+```c++
+int mini(int num[], int len){
+	
+	int min = INT_MAX; 		// #include <bits/stdc++.h>
+	
+	for(int i =0; i< len; i++){
+		if(num[i] < min)
+		{
+			min = num[i];
+		}
+		
+	}
+	return min;
+}
+```
+
+Builtin Minimum Function
+
+```c++
+int minn = INT_MAX;
+
+for(int i =0; i< len; i++){
+	minn = min(minn, num[i]);
+}
+return minn;
+```
+
+Maximum
+```c++
+int maxi(int num[], int len){
+	
+	int max = INT_MIN;		// #include <bits/stdc++.h>
+	
+	for(int i =0; i< len; i++){
+		if(num[i] > max)
+		{
+			max = num[i];
+		}
+	}
+	return max;
+}
+```
+
+Builtin Maximum Function
+
+```c++
+int maxx = INT_MIN;
+
+for(int i =0; i< len; i++){
+	miaxx = max(miaxx, num[i]);
+}
+return miaxx;
+```
+
+### Types of Array
+- int
+- char Array 
+- float
+- double
+- bool
 
 
 ## Char Array
@@ -126,7 +286,10 @@ int size = myVector.size(); // size is 13
 
 
 
-## Find 2nd Largest Num
+
+
+
+### Find 2nd Largest/ Smallest Number in Array 
 
 ```c++
 #include <bits/stdc++.h>

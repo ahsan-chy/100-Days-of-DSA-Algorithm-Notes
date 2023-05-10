@@ -4,12 +4,15 @@ Table of Content
 - Two Pointer Approch
 - Palindrom
 - Anagram 
+- Kadane's Algorithm in Array
+- Sub Array 
 - Sliding Window
+    - Minimum Sub Array 
+    - Maximum Sub Array
 - **Dublicate** in Array 
     - Find Dublicate in Array
     - Find Unique Element In Array
     - Remove Dublicate in Array
-- Kadane's Algorithm in Array
 - Fast - Slow Approch (Rabbit & Turtol Approch)
 -  
 
@@ -36,4 +39,87 @@ Table of Content
       return totalMax;
     }
 ```
+
+## Sub Array 
+
+
+
+## Sliding Window 
+
+
+
+![Sliding Window](https://algomonster.s3.us-east-2.amazonaws.com/sliding_window_maximum.png)
+
+![Sliding Window](https://miro.medium.com/v2/resize:fit:1135/1*i_lXNFGO36nh671aziwrUA.jpeg)
+
+
+#### First Approch
+
+
+
+```c++
+int slidingWindow(int arr[], int size, int window) {
+	
+	int output[size - window +1];
+
+	for(int i =0; i< size - window +1; i++){
+		int sum = 0;
+		for(int j = i; j< window + i; j++){
+			sum = sum + arr[j];
+			output[i] = sum;
+		}
+	}
+
+	int max = INT_MIN;
+	int len = getchlength(output);
+	for(int x = 0; x< len; x++){
+		if(output[x] > max)
+		{
+			max = output[x];
+		}		
+	}	
+	return max;
+}
+
+```
+
+Find **Length** of Array 
+```c++
+//Get Length of Array
+int getchlength(int ch[]) {
+  int count = 0;
+  for (int i = 0; ch[i] != '\0'; i++) {
+    count++;
+  }
+  return count;
+}
+```
+#### Optimal Approch
+
+```c++
+#include <bits/stdc++.h>
+using namespace std;
+	
+int kGroupSum (int arr[], int n, int k) {
+		int mSum = 0;
+		int sum = 0;
+		for(int i = 0; i < k; i++) {
+			mSum += arr[i];
+		}
+		sum = mSum;
+		for(int i = k; i < n; i++) {
+			sum += arr[i];
+			sum -= arr[i-k];
+			mSum = max(sum, mSum);
+		}
+		return mSum;
+	}
+int main() {
+	int arr[] = {5, 6, 1, 2, 3, 10};
+	cout << kGroupSum(arr, 6, 1) <<endl;
+}
+
+```
+
+
 
