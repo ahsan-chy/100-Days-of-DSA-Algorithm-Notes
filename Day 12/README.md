@@ -14,7 +14,8 @@ Table of Content
     - Find Unique Element In Array
     - Remove Dublicate in Array
 - Fast - Slow Approch (Rabbit & Turtol Approch)
--  
+-  Find Missing in Array
+- 
 
 
 
@@ -123,3 +124,43 @@ int main() {
 
 
 
+### Find Unique
+
+- Find Unique Elements in Array 
+- Array all elements apprear twice only one appear once
+
+```c++
+int findUnique(int *arr, int n){
+	int ans = 0;
+	for(int i =0; i< n; i++){
+		ans = ans ^ arr[i]; 
+	}
+	return ans;
+}
+```
+
+Find All Elements which Appear only Once in Array
+```c++
+
+```
+
+### Find Dublicate
+
+```c++
+int findUnique(int *arr, int n){
+	int ans = 0;
+	for(int i =0; i< n; i++){
+		ans = ans ^ arr[i]; 
+	}
+
+	for(int j=0; j< n; j++){
+		ans = ans ^ j;
+	}
+	return ans;
+}
+```
+
+Find All Elements which Appear Twice in Array
+```c++
+
+```
