@@ -5,7 +5,8 @@ Table of Content
 - Bubble Sort 
     - Auxilary Space
     - InPlace
-
+- Insertion Sort
+- Merge Sort
 
 .
 
@@ -101,3 +102,9 @@ An **in-place sorting** algorithm sorts the elements in place: that is, it needs
 
 
 
+
+
+## Insertion Sort
+
+
+## Merge Sort
