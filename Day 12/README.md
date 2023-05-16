@@ -164,3 +164,36 @@ Find All Elements which Appear Twice in Array
 ```c++
 
 ```
+
+
+### Find the Missing Number
+
+[Geeks For Geeks](https://www.geeksforgeeks.org/find-the-missing-number/) 
+
+##### When Array is
+- Sorted Array
+	- Linear Search (Approch)
+	- Binary Search (Approch)
+- Unsorted Array
+
+
+##### Other Approches
+- Hash
+- 
+
+
+##### Brute Force
+```c++
+// Function to get the missing number
+int getMissingNo(int a[], int n)
+{
+    // Given the range of elements
+    // are 1 more than the size of array
+    int N = n + 1;
+   
+    int total = (N) * (N + 1) / 2;
+    for (int i = 0; i < n; i++)
+        total -= a[i];
+    return total;
+}
+```
