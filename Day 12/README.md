@@ -15,6 +15,7 @@ Table of Content
     - Remove Dublicate in Array
 - Fast - Slow Approch (Rabbit & Turtol Approch)
 -  Find Missing in Array
+- Move Zero **0** at end
 - 
 
 
@@ -168,6 +169,9 @@ Find All Elements which Appear Twice in Array
 
 ### Find the Missing Number
 
+[Explanation Interview bit](https://www.interviewbit.com/blog/find-the-missing-number/)
+![Find missing](https://www.interviewbit.com/blog/wp-content/uploads/2021/10/Missing-Number.jpg)
+
 [Geeks For Geeks](https://www.geeksforgeeks.org/find-the-missing-number/) 
 
 ##### When Array is
@@ -183,17 +187,120 @@ Find All Elements which Appear Twice in Array
 
 
 ##### Brute Force
-```c++
-// Function to get the missing number
-int getMissingNo(int a[], int n)
+```diff
+! Brute Force Approch 
+int missingNumber(int arr[], int n)
 {
-    // Given the range of elements
-    // are 1 more than the size of array
-    int N = n + 1;
-   
-    int total = (N) * (N + 1) / 2;
-    for (int i = 0; i < n; i++)
-        total -= a[i];
-    return total;
+	int total = (n+1) * (n+2)/2; 
+	for(int i =0; i<n; i++){
+		total -= arr[i];		
+	}
+	return total;
 }
+
+int main() {
+	int arr[] = {1,2,3,5,6,7};
+	cout<<missingNumber(arr,6);
+}
+```
+
+##### Using **XOR** Approch
+
+
+**Algorithm:**
+- Create two variables a1= 0 and a2 = 0
+- Iterate from 1 to n with i as the counter.
+- For every index i update a1 as a1 = a1 ^ i
+- Now iterate over the array from start to end.
+- For every index i update a2 as a2 = a2 ^ arr[i]
+- Print the missing number as a1 ^ a2.
+
+
+```c++
+int MissingNo(int arr[], int n) {
+  int x1 = arr[0];
+  int x2 = 1;
+
+  for (int i = 1; i < n; i++)
+    x1 = x1 ^ arr[i];
+
+  for (int i = 2; i <= n + 1; i++)
+    x2 = x2 ^ i;
+
+  return (x1 ^ x2);
+}
+```
+
+
+### Move all zeroes 0 to end of array
+
+Two Ways to resolve this:
+- In-Place Allowed
+- In-Place Not Allowed
+
+Method : **Partitioning the array / Two Pointer**
+
+**Approach**: The approach is pretty simple. We will use 0 as a pivot element and whenever we see a non zero element we will swap it with the pivot element. So all the non zero element will come at the beginning.
+
+
+
+```c++
+void movezero(int arr[], int n) {
+    int z = 0;  // Index to track the position of the next non-zero element
+    
+    for (int i = 0; i < n; i++) {
+        if (arr[i] != 0) {
+            // Swap the non-zero element with the element at position 'z'
+            swap(arr[z], arr[i]);
+
+            z++;  // Increment 'z' to point to the next position for a non-zero element
+        }
+    }
+}
+
+  int arr[] = {4, 0, 1, 0, 2, 3, 0, 5, 6, 7};  
+  movezero(arr, 10);
+	for(int i = 0; i < 10; i++)
+		cout << arr[i] << " ";
+```
+
+
+##### Char Array & String move 'a' at end
+```c++
+void moveA(char arr[], int n){
+	int z = 0;
+	for(int i = 0; i < n; i++) {
+		if(arr[i] != 'a') {
+			char tmp = arr[i];
+			arr[i] = arr[z];
+			arr[z] = tmp;
+			z++;
+		}
+	}
+}
+string moveLang(string &str){
+	int n = str.length();
+	int z = 0;
+	for(int i = 0; i < n; i++) {
+		if(str[i] != 'a') {
+			char tmp = str[i];
+			str[i] = str[z];
+			str[z] = tmp;
+			z++;
+		}
+	}
+	return str;
+}
+```
+int main()
+```c++
+ char str[] = {'t', 'a', 'b', 'a', 'b', 'n', 'c', 's', 'a', 'a', '\0'};  
+  string lang = "ahsan";  
+
+moveA(str, 10);
+	for(int i = 0; i < 10; i++)
+	cout << str[i] << " ";
+
+moveLang(lang);
+	cout << lang << " ";
 ```
