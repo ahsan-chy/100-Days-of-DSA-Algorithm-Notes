@@ -7,8 +7,7 @@ Table of Content
 - Basic Array Operations
 - Find Element in Array
 	- Min - Max
-	- Find 2nd last element 
-	- Compare Values in Array
+	- Find 2nd last element - 2nd Max 
  - Char Array Practice Questions
 	- Reverse Char Array (String)
 	- Check If String is palindrome
@@ -78,6 +77,8 @@ for(int i =0; i<15; i++){
 ### Array Length 
 
 - First Method to find **Length** of Array
+
+**`sizeof(array)`** returns the total number of bytes used by the array.
 ```c++
 int arr[] = {1,2,3,4,5};
 int length = sizeof(arr) / sizeof(arr[0]);  // length = 20/4 = 5 
@@ -96,12 +97,27 @@ int getchlength(int num[]) {
 ```
 
 ### Array Functions 
+- Fill
 - Min 
 - Max 
-- compare 
 - length - size
-- cin 
+- sort
+- reverse
 - swap 
+- compare 
+- cin 
+
+
+##### Fill
+**`fill:`** This function fills the specified range of an array with a given value. For example, **fill(array, array + n, 0)** sets all elements of the array to 0.
+
+```c++
+int arr[5];
+fill(arr, arr + 5, 1); // sets all elements of the array to 1
+for (int i = 0; i < 5; ++i) {
+    cout << arr[i] << " "; // prints: 1 1 1 1 1
+}
+```
 
 
 
@@ -150,6 +166,42 @@ int getchlength(int num[]) {
 }
 ```
 
+##### sort 
+**`sort:`** This function sorts the elements of an array in ascending order. For example, **sort(array, array + n)** sorts the n elements of the array.
+
+```c++
+int arr[] = {5, 3, 1, 4, 2};
+sort(arr, arr + 5); // sorts the elements of the array in ascending order
+for (int i = 0; i < 5; ++i) {
+    cout << arr[i] << " "; // prints: 1 2 3 4 5
+}
+
+```
+
+
+##### reverse
+**`reverse:`** This function reverses the order of the elements in an array. For example, **reverse(array, array + n)** reverses the n elements of the array.
+
+```c++
+int arr[] = {1, 2, 3, 4, 5};
+reverse(arr, arr + 5); // reverses the order of the elements in the array
+for (int i = 0; i < 5; ++i) {
+    cout << arr[i] << " "; // prints: 5 4 3 2 1
+}
+```
+
+##### Swap
+
+```c++
+int a = 5, b = 10;
+swap(a, b); // swap the values of a and b
+cout << "a = " << a << ", b = " << b << endl;
+```
+output
+```c++
+a = 10, b = 5
+
+```
 
 ### Find Min/Max In Array
 
