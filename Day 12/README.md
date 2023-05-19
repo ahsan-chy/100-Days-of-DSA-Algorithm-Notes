@@ -1,6 +1,7 @@
 # Day 12: Array Approches
 
 Table of Content
+- Sub Array - Sub Sequence
 - Two Pointer Approch
 - Palindrom
 - Anagram 
@@ -19,6 +20,35 @@ Table of Content
 - 
 
 
+
+
+### Sub Array 
+- Sub Array 
+- Sub Sequence
+
+A subarray is a contiguous subset of the array. Contegious part of array. 
+
+arr[] = {-2, -3, 4, -1, -2, 1, 5, -3}
+
+Example of **Sub array**:
+sub = {4, -1}
+sub = { 1, 5, -3}
+sub = {-2, -3, 4, -1, -2, 1, 5, -3}
+
+Sub array can be any single element or entire array or any specific sequence of array elements. 
+
+
+![Sub array](https://www.interviewbit.com/blog/wp-content/uploads/2021/09/Array.jpg)
+
+
+### Sub Sequence 
+
+arr[] = {-2, -3, 4, -1, -2, 1, 5, -3}
+
+subsequence: {4, -1, 5}
+subsequence: {-2, -1, -3}
+
+![Subarray](https://prepinsta.com/wp-content/uploads/2021/12/Python-program-to-find-Largest-sum-of-contiguous-Subarray.webp)
 
 
 ## Kadane's Algorithm in Array
@@ -41,10 +71,6 @@ Table of Content
       return totalMax;
     }
 ```
-
-## Sub Array 
-
-
 
 ## Sliding Window 
 
