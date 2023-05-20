@@ -23,8 +23,8 @@
 | 16   | **[Day16](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%2016)** | [Replit]() | ... |
 | 17   | **[Day17](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%2017)** | [Replit]() | ... |
 | 18   | **[Day18](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%2018)** | [Replit]() | ... |
-| 19   | **[Day19](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%2019)** | [Replit]() | ... |
-| 20   | **[Day20](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%2020)** | [Replit]() | ... |
+| 19   | **[Day19](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%2019)** | [Replit]() | Vector |
+| 20   | **[Day20](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%2020)** | [Replit]() | STL |
 | 21   | **[Day21](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%2021)** | [Replit](https://replit.com/@ahaniqbal?path=folder/100%20Days%20DSA%20with%20C%2B%2B/Day%2021%20-%20Link%20List) | Link List |
 | 22   | **[Day22](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%2022)** | [Replit]() | ... |
 | 23   | **[Day23](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%2023)** | [Replit]() | ... |
@@ -55,3 +55,4 @@
 | 48   | **[Day48](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%2048)** | [Replit]() | ... |
 | 49   | **[Day49](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%2049)** | [Replit]() | ... |
 | 50   | **[Day50](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%2050)** | [Replit]() | ... |
+| 51   | **[Day51](https://github.com/ahsan-chy/100-Days-of-DSA-Algorithm/tree/master/Day%2051)** | [Replit]() | Hashmap - Set - Pair |
