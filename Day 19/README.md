@@ -1,4 +1,4 @@
-# Day 19: Vector
+# Day 19: Vector - Pair 
 
 Table of Content
 - Vector 
@@ -60,6 +60,11 @@ v.emplace_back(10);
 **Push** at Front position
 ```c++
 v.emplace(v.begin(), 10000);
+```
+
+Put same value in Entire Vector
+```c++
+vector<int> v(5, 10);   // 10 10 10 10 10  
 ```
 
 .
@@ -143,3 +148,47 @@ std::sort(v.begin(), v.end());
 
 
 [VEctor Functions](https://cplusplus.com/reference/vector/vector/)
+
+
+## Pair 
+
+Pair is used to combine together two values that may be of different data types.
+
+Header file
+```c++
+#include <bits/stdc++.h>
+```
+
+Define Pair
+```c++
+pair <int, strimg> p;
+```
+
+
+```c++
+// defining a pair
+pair<int, char> PAIR1;
+
+// first part of the pair
+PAIR1.first = 100;
+// second part of the pair
+PAIR1.second = 'G';
+
+cout << PAIR1.first << " ";
+cout << PAIR1.second << endl;
+```
+
+**make_pair():** This template function allows to create a value pair without writing the types explicitly. 
+
+```c++
+PAIR3 = make_pair("GeeksForGeeks is Best", 4.56);
+cout << PAIR3.first << " ";
+cout << PAIR3.second << endl;
+```
+
+**swap**
+```c++
+pair1.swap(pair2);
+```
+
+
