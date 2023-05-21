@@ -187,6 +187,80 @@ int findUnique(int *arr, int n){
 }
 ```
 
+##### Remove duplicates from Sorted Array
+[Geeks for Geeks Explanation](https://www.geeksforgeeks.org/remove-duplicates-sorted-array/)
+
+Method 1: 
+```c++
+ int removeDublicate(int arr[], int n){
+	 if( n == 0 || n == 1) return n;
+
+	 int temp[n];
+	 int j =0;
+
+	 for(int i= 0; i<n-1; i++){
+		 if(arr[i] != arr[i+1]){
+			 temp[j++] = arr[i];
+		 }
+	 }
+	 temp[j++] = arr[n-1];
+
+	 for(int i = 0; i<j; i++){
+		 arr[i] = temp[i];
+	 }
+	 return j;
+ }
+```
+
+```c++
+int arr[] = {1, 2, 2, 3, 4, 4, 4, 5, 5}; // Text case 1
+int arr1[] = {25};	// Text case 2
+int arr2[] = {1,1,1, 2, 2, 3, 4, 4, 4, 4, 5, 5}; // Text case 3
+int arr3[] = {11,11,12, 12, 12, 33, 34, 44, 24, 24, 25, 55}; // Text case 4
+int n = sizeof(arr) / sizeof(arr[0]);
+int n1 = sizeof(arr1) / sizeof(arr1[0]);
+int n2 = sizeof(arr2) / sizeof(arr2[0]);
+int n3 = sizeof(arr3) / sizeof(arr3[0]);
+
+int length = removeDublicate(arr, n);
+cout<<length <<endl;
+
+for(int i=0; i<length; i++){
+	cout<<arr[i] << " ";
+}
+```
+
+Method 2:
+```c++
+int removeDublicate(int arr[], int n){
+	if (n==0 || n==1)
+        return n;
+	int j = 0;
+	for(int i =0; i < n-1; i++){
+		if(arr[i] != arr[i+1]){
+			arr[j++] = arr[i];
+		}
+	}
+	arr[j++] = arr[n-1];
+	return j; 
+}
+```
+
+Method 3: Amir Method
+```c++
+int removeDuplicate(int arr[], int n) {
+	int j = 0; // 0 
+	for(int i = 1; i < n; i++) {
+		if(arr[i] == arr[j]) continue;
+
+		arr[++j] = arr[i];
+	}
+	j++;
+	return j;
+}
+```
+
+
 Find All Elements which Appear Twice in Array
 ```c++
 
