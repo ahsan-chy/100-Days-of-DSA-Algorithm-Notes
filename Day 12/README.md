@@ -404,3 +404,44 @@ moveA(str, 10);
 moveLang(lang);
 	cout << lang << " ";
 ```
+
+
+### Find Missing Element in Array
+
+- Simple Approch
+- with XOR Approch
+
+```c++
+#include <iostream>
+using namespace std;
+
+// - 1st Approch 
+int missingNumber(int arr[], int n)
+{
+	int total = (n+1) * (n+2)/2; 
+	for(int i =0; i<n; i++){
+		total -= arr[i];		
+	}
+	return total;
+}
+
+//- 2nd Approch - XOR
+int MissingNo(int arr[], int n) {
+  int x1 = arr[0];
+  int x2 = 1;
+
+  for (int i = 1; i < n; i++)
+    x1 = x1 ^ arr[i];
+
+  for (int i = 2; i <= n + 1; i++)
+    x2 = x2 ^ i;
+
+  return (x1 ^ x2);
+}
+
+int main() {
+	int arr[] = {1,2,3,5,6,7};
+	cout<<missingNumber(arr,6)<<endl;
+	cout<<MissingNo(arr,6);
+}
+```
